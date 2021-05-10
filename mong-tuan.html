@@ -1,0 +1,241 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+	Hệ thống quản lý thi tuyển sinh vào lớp 10 THPT tỉnh Thanh Hóa
+</title>
+    
+    <style type="text/css">
+        .auto-style1 {
+            text-align: center;
+        }
+
+        .auto-style2 {
+            text-align: right;
+        }
+    </style>
+<style type="text/css">
+	/* <![CDATA[ */
+	#mnuMain { background-color:#009999; }
+	#mnuMain img.icon { border-style:none;vertical-align:middle; }
+	#mnuMain img.separator { border-style:none;display:block; }
+	#mnuMain img.horizontal-separator { border-style:none;vertical-align:middle; }
+	#mnuMain ul { list-style:none;margin:0;padding:0;width:auto; }
+	#mnuMain ul.dynamic { background-color:#CCFFFF;z-index:1;margin-left:2px; }
+	#mnuMain a { color:Black;font-family:Verdana;font-size:12pt;text-decoration:none;white-space:nowrap;display:block; }
+	#mnuMain a.static { padding:2px 5px 2px 5px;text-decoration:none; }
+	#mnuMain a.popout { background-image:url("/WebResource.axd?d=bnmUi2HsQM4iUOvXNeijpP1EzxPAI-rNShBnXK5MdfZWIa0qsA2Ooi3mgKigjHLrg-6y34yNc7fwH3hmdsSLTS09lIoE4dQdDrvgcm7XElM1&t=637454321640000000");background-repeat:no-repeat;background-position:right center;padding-right:14px; }
+	#mnuMain a.dynamic { padding:2px 5px 2px 5px;text-decoration:none; }
+	#mnuMain a.static.selected { background-color:#006600;text-decoration:none; }
+	#mnuMain a.dynamic.selected { background-color:#FFFF99;text-decoration:none; }
+	#mnuMain a.static.highlighted { color:White;background-color:#FF9966; }
+	#mnuMain a.dynamic.highlighted { color:White;background-color:#009900; }
+	/* ]]> */
+</style></head>
+<body>
+    <form method="post" action="./" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+
+<script src="/WebResource.axd?d=fSR5foHz0dMvj6UiSk4xPguijlsA4Q-EaiAMZk6VvpWvUvUlfIsfzKbQjKu5aFYcFRk9Xj0zNciMjhs4ytexjGppsaws5FS1yiJiZ8Jop101&amp;t=637454321640000000" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="4F4553C1" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAgt8Z3+AwjP7oDYWGWkAAF306aBm/eIixQlwMS4IqBFyOcoJxRgObAw8ZZkTnaJhrcLRl+68QbJxGPf91dNHvYftDA2PFHHQdCbf5geczjb04gzPQBjUrUVo1cljskUcGk3+bMiW3fn890DJKXeW6e6ZvRuSxvneakp+2vQLGQRlfMfsO5JeVJtl6u26fybQdTeYYZwLfpd3AQuTomF84DB" />
+</div>
+        <div>
+            <table align="center">
+                <tr>
+                    <td rowspan="3">
+                        <input type="image" name="ctl00$btnHeader" id="btnHeader" title="SỞ GIÁO DỤC VÀ ĐÀO TẠO THANH HÓA" src="Images/Headers/headersgd.jpg" alt="Sở Giáo dục và Đào tạo Thanh Hóa" style="width:90px;" />
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style1" bgcolor="#009999">
+                        <span style="font-size:20px;font-weight:bold;">SỞ GIÁO DỤC VÀ ĐÀO TẠO THANH HÓA</span>
+                    </td>
+                    <td class="auto-style2">
+                        <span id="lblThongtinNguoidung" title="Chưa đăng nhập hệ thống!" style="color:Blue;font-weight:bold;">Khách thăm!</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span id="lblThongtinKythi" style="color:#009933;font-weight:bold;">21- Kỳ thi: Tuyển sinh vào lớp 10 THPT (Năm học: 2021-2022)</span>
+                    </td>
+                    <td class="auto-style2">
+                        <span id="lblLuongtruycap"><b>Số online/truy cập: </b>226/481,552</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <a href="#mnuMain_SkipLink"><img alt="Skip Navigation Links" src="/WebResource.axd?d=286kyKc41nA5gsKmVLxfr0xmNPlTigr-G3XGhqLLqnJFVlfqa8_HiMl8J8Ukqtm4Y50aDipFLqNj_3KpGFwMsd-mjauwKpfYje4Tfa3nBx81&amp;t=637454321640000000" width="0" height="0" style="border-width:0px;" /></a><div id="mnuMain">
+	<ul class="level1">
+		<li><a class="popout level1" href="#" onclick="__doPostBack(&#39;ctl00$mnuMain&#39;,&#39;&#39;)">Hệ thống</a><ul class="level2">
+			<li><a class="level2" href="Hethong/Dangnhap.aspx">Đăng nhập</a></li>
+		</ul></li><li><a class="popout level1" href="#" onclick="__doPostBack(&#39;ctl00$mnuMain&#39;,&#39;&#39;)">Danh Mục</a><ul class="level2">
+			<li><a class="level2" href="Danhmuc/Caphoc.aspx">Cấp học (bậc học)</a></li><li><a class="level2" href="Danhmuc/Captruong.aspx">Cấp trường</a></li><li><a class="level2" href="Danhmuc/LoaihinhTruong.aspx">Loại hình trường</a></li><li><a class="level2" href="Danhmuc/Truong.aspx">Trường</a></li><li><a class="level2" href="Danhmuc/Monhoc.aspx">Môn học</a></li><li><a class="level2" href="Danhmuc/Monthi.aspx">Môn thi</a></li>
+		</ul></li><li><a class="popout level1" href="#" onclick="__doPostBack(&#39;ctl00$mnuMain&#39;,&#39;&#39;)">Khởi tạo</a><ul class="level2">
+			<li><a class="level2" href="KhoitaoKythi/XuatDSTruongthi.aspx">Xem danh sách các trường thi</a></li><li><a class="level2" href="KhoitaoKythi/XuatChitieuTuyensinh.aspx">Xem chỉ tiêu tuyển sinh</a></li>
+		</ul></li><li><a class="popout level1" href="#" onclick="__doPostBack(&#39;ctl00$mnuMain&#39;,&#39;&#39;)">Hồ sơ thi</a><ul class="level2">
+			<li><a class="level2" href="Hosothi/TkNguyenvongDT.aspx">Thống kê Ng.Vọng xét tuyển</a></li>
+		</ul></li><li><a class="popout level1" href="#" onclick="__doPostBack(&#39;ctl00$mnuMain&#39;,&#39;&#39;)">Tra cứu</a><ul class="level2">
+			<li><a class="level2" href="Tracuu/TracuuHSDKDT.aspx">Tra cứu hồ sơ ĐKDT</a></li><li><a class="level2" href="Tracuu/TracuuSBD.aspx">Tra cứu SBD, phòng thi</a></li><li><a class="level2" href="Tracuu/TracuuKetqua.aspx">Tra cứu kết quả thi</a></li><li><a class="level2" href="Tracuu/TracuuKetquaChuyen.aspx">Tra cứu kết quả thi Chuyên</a></li>
+		</ul></li><li><a class="popout level1" href="#" onclick="__doPostBack(&#39;ctl00$mnuMain&#39;,&#39;&#39;)">Hỗ trợ</a><ul class="level2">
+			<li><a class="level2" href="Hotro/Huongdan.aspx?HDHTID=001" target="_Blank">Các hướng dẫn sử dụng</a></li><li><a class="level2" href="Hotro/About.aspx">About</a></li>
+		</ul></li>
+	</ul>
+</div><a id="mnuMain_SkipLink"></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <hr />
+                        <div id="pnNoidung" Align="Center" style="background-color:#CCCCCC;height:645px;width:1280px;overflow:scroll;">
+	
+                            
+                            
+                            
+    <table cellpadding="10">
+        <tr>
+            <td valign="top">
+                <span id="cphNoidung_lblThongbao"><p Align="center"><b>LỊCH CÔNG TÁC THI</b></p><p align="left">1. Cập nhật hồ sơ dự thi từ: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>04/05/2021 00:00</b> - đến: <b>09/05/2021 21:30</b>.<br />2. Tra cứu SBD, phòng thi từ: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>02/06/2021 07:30</b>.<br />3. Tra cứu điểm thi chuyên từ: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>14/06/2021 07:00</b>.<br />4. Tra cứu điểm thi từ: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>14/06/2021 07:00</b>.<br />5. Kết quả phúc khảo có từ: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b></b>.<br />6. Tra cứu kết quả xét tuyển từ: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>17/06/2021 07:00</b>.</p><p align="left" style="color: red; "><b><u>Chú ý:</b></u> Lịch công tác thi có thể thay đổi theo thực tế. Hãy cập nhật thường xuyên.</p></span>
+                <span id="cphNoidung_lblChuyen"><p Align="center"><b>THỐNG KÊ CHUYÊN</b></p></span>
+                <div>
+		<table cellspacing="0" rules="all" border="1" id="cphNoidung_gvThongkeChuyen" style="color:#333333;width:500px;border-collapse:collapse;">
+			<tr style="color:White;background-color:#1C5E55;font-weight:bold;">
+				<th scope="col">TT</th><th scope="col">T&#234;n chuy&#234;n</th><th scope="col">Số NV.XT</th><th scope="col">Chỉ ti&#234;u</th>
+			</tr><tr style="background-color:#E3EAEB;">
+				<td align="center" style="width:40px;">1</td><td>Địa l&#253;</td><td align="center" style="width:40px;">94</td><td align="center" style="width:40px;">35</td>
+			</tr><tr style="background-color:White;">
+				<td align="center" style="width:40px;">2</td><td>Ho&#225; học</td><td align="center" style="width:40px;">116</td><td align="center" style="width:40px;">35</td>
+			</tr><tr style="background-color:#E3EAEB;">
+				<td align="center" style="width:40px;">3</td><td>Lịch sử</td><td align="center" style="width:40px;">106</td><td align="center" style="width:40px;">35</td>
+			</tr><tr style="background-color:White;">
+				<td align="center" style="width:40px;">4</td><td>Ngữ văn</td><td align="center" style="width:40px;">127</td><td align="center" style="width:40px;">35</td>
+			</tr><tr style="background-color:#E3EAEB;">
+				<td align="center" style="width:40px;">5</td><td>Sinh học</td><td align="center" style="width:40px;">67</td><td align="center" style="width:40px;">35</td>
+			</tr><tr style="background-color:White;">
+				<td align="center" style="width:40px;">6</td><td>Tiếng Anh</td><td align="center" style="width:40px;">271</td><td align="center" style="width:40px;">70</td>
+			</tr><tr style="background-color:#E3EAEB;">
+				<td align="center" style="width:40px;">7</td><td>Tin học</td><td align="center" style="width:40px;">111</td><td align="center" style="width:40px;">35</td>
+			</tr><tr style="background-color:White;">
+				<td align="center" style="width:40px;">8</td><td>To&#225;n</td><td align="center" style="width:40px;">120</td><td align="center" style="width:40px;">70</td>
+			</tr><tr style="background-color:#E3EAEB;">
+				<td align="center" style="width:40px;">9</td><td>Vật l&#253;</td><td align="center" style="width:40px;">80</td><td align="center" style="width:40px;">35</td>
+			</tr>
+		</table>
+	</div>
+            </td>
+            <td valign="top">
+                <span id="cphNoidung_lblTHPT"><p Align="center"><b>THỐNG KÊ TRUNG HỌC PHỔ THÔNG</b></p></span>
+                <div>
+		<table cellspacing="0" rules="all" border="1" id="cphNoidung_gvThongkeTHPT" style="color:#333333;width:550px;border-collapse:collapse;">
+			<tr style="color:White;background-color:#1C5E55;font-weight:bold;">
+				<th scope="col">TT</th><th scope="col">T&#234;n trường</th><th scope="col">Số NV.XT</th><th scope="col">Số HS ĐKDT</th><th scope="col">Chỉ ti&#234;u</th>
+			</tr><tr style="background-color:#E3EAEB;">
+				<td align="center" style="width:40px;">31</td><td>THPT Ho&#224;ng Lệ Kha</td><td align="center" style="width:40px;">392</td><td align="center" style="width:40px;">392</td><td align="center" style="width:40px;">378</td>
+			</tr><tr style="background-color:White;">
+				<td align="center" style="width:40px;">32</td><td>THPT Lam Kinh</td><td align="center" style="width:40px;">387</td><td align="center" style="width:40px;">384</td><td align="center" style="width:40px;">336</td>
+			</tr><tr style="background-color:#E3EAEB;">
+				<td align="center" style="width:40px;">33</td><td>THPT Lang Ch&#225;nh</td><td align="center" style="width:40px;">457</td><td align="center" style="width:40px;">455</td><td align="center" style="width:40px;">462</td>
+			</tr><tr style="background-color:White;">
+				<td align="center" style="width:40px;">34</td><td>THPT L&#234; Ho&#224;n</td><td align="center" style="width:40px;">531</td><td align="center" style="width:40px;">529</td><td align="center" style="width:40px;">378</td>
+			</tr><tr style="background-color:#E3EAEB;">
+				<td align="center" style="width:40px;">35</td><td>THPT L&#234; Hồng Phong</td><td align="center" style="width:40px;">357</td><td align="center" style="width:40px;">356</td><td align="center" style="width:40px;">294</td>
+			</tr><tr style="background-color:White;">
+				<td align="center" style="width:40px;">36</td><td>THPT L&#234; Lai</td><td align="center" style="width:40px;">443</td><td align="center" style="width:40px;">412</td><td align="center" style="width:40px;">378</td>
+			</tr><tr style="background-color:#E3EAEB;">
+				<td align="center" style="width:40px;">37</td><td>THPT L&#234; Lợi</td><td align="center" style="width:40px;">684</td><td align="center" style="width:40px;">682</td><td align="center" style="width:40px;">504</td>
+			</tr><tr style="background-color:White;">
+				<td align="center" style="width:40px;">38</td><td>THPT L&#234; Văn Hưu</td><td align="center" style="width:40px;">619</td><td align="center" style="width:40px;">608</td><td align="center" style="width:40px;">504</td>
+			</tr><tr style="background-color:#E3EAEB;">
+				<td align="center" style="width:40px;">39</td><td>THPT Lương Đắc Bằng</td><td align="center" style="width:40px;">775</td><td align="center" style="width:40px;">752</td><td align="center" style="width:40px;">546</td>
+			</tr><tr style="background-color:White;">
+				<td align="center" style="width:40px;">40</td><td>THPT Mai Anh Tuấn</td><td align="center" style="width:40px;">556</td><td align="center" style="width:40px;">554</td><td align="center" style="width:40px;">462</td>
+			</tr><tr style="background-color:#E3EAEB;">
+				<td align="center" style="width:40px;">41</td><td>THPT Mường L&#225;t</td><td align="center" style="width:40px;">411</td><td align="center" style="width:40px;">411</td><td align="center" style="width:40px;">336</td>
+			</tr><tr style="background-color:White;">
+				<td align="center" style="width:40px;">42</td><td>THPT Nga Sơn</td><td align="center" style="width:40px;">366</td><td align="center" style="width:40px;">366</td><td align="center" style="width:40px;">378</td>
+			</tr><tr style="background-color:#E3EAEB;">
+				<td align="center" style="width:40px;">43</td><td>THPT Ngọc Lặc</td><td align="center" style="width:40px;">558</td><td align="center" style="width:40px;">599</td><td align="center" style="width:40px;">462</td>
+			</tr><tr style="background-color:White;">
+				<td align="center" style="width:40px;">44</td><td>THPT Nguyễn Mộng Tu&#226;n</td><td align="center" style="width:40px;">584</td><td align="center" style="width:40px;">580</td><td align="center" style="width:40px;">294</td>
+			</tr><tr style="background-color:#E3EAEB;">
+				<td align="center" style="width:40px;">45</td><td>THPT Nguyễn Qu&#225;n Nho</td><td align="center" style="width:40px;">352</td><td align="center" style="width:40px;">350</td><td align="center" style="width:40px;">336</td>
+			</tr><tr align="center" style="color:White;background-color:#666666;">
+				<td colspan="5"><table>
+					<tr>
+						<td><a href="javascript:__doPostBack(&#39;ctl00$cphNoidung$gvThongkeTHPT&#39;,&#39;Page$1&#39;)" style="color:White;">1</a></td><td><a href="javascript:__doPostBack(&#39;ctl00$cphNoidung$gvThongkeTHPT&#39;,&#39;Page$2&#39;)" style="color:White;">2</a></td><td><span>3</span></td><td><a href="javascript:__doPostBack(&#39;ctl00$cphNoidung$gvThongkeTHPT&#39;,&#39;Page$4&#39;)" style="color:White;">4</a></td><td><a href="javascript:__doPostBack(&#39;ctl00$cphNoidung$gvThongkeTHPT&#39;,&#39;Page$5&#39;)" style="color:White;">5</a></td><td><a href="javascript:__doPostBack(&#39;ctl00$cphNoidung$gvThongkeTHPT&#39;,&#39;Page$6&#39;)" style="color:White;">6</a></td>
+					</tr>
+				</table></td>
+			</tr>
+		</table>
+	</div>
+                <span id="cphNoidung_lblDTNT"><p Align="center"><b>THỐNG KÊ DÂN TỘC NỘI TRÚ</b></p></span>
+                <div>
+		<table cellspacing="0" rules="all" border="1" id="cphNoidung_gvThongkeDTNT" style="color:#333333;width:530px;border-collapse:collapse;">
+			<tr style="color:White;background-color:#1C5E55;font-weight:bold;">
+				<th scope="col">TT</th><th scope="col">T&#234;n trường</th><th scope="col">Số NV.XT</th><th scope="col">Chỉ ti&#234;u</th>
+			</tr><tr style="background-color:#E3EAEB;">
+				<td align="center" style="width:40px;">1</td><td>THPT D&#226;n tộc Nội tr&#250; tỉnh</td><td align="center" style="width:40px;">321</td><td align="center" style="width:40px;">180</td>
+			</tr><tr style="background-color:White;">
+				<td align="center" style="width:40px;">2</td><td>THPT DTNT Ngọc Lặc</td><td align="center" style="width:40px;">486</td><td align="center" style="width:40px;">180</td>
+			</tr>
+		</table>
+	</div>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align:center" colspan="2">
+                <span id="cphNoidung_lblLabel" style="color:Red;"><b><u>Lưu ý:</b></u> Số liệu thống kê chỉ mang tính tham khảo, số liệu chính thức sẽ được thông báo bằng văn bản.</span>
+            </td>
+        </tr>
+    </table>
+
+                        
+</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        
+<hr />
+<div Align="Center">
+    <strong>SỞ GIÁO DỤC VÀ ĐÀO TẠO THANH HÓA</strong><br />
+<strong>Địa chỉ: </strong><span>02- Hà Văn Mao, phường Ba Đình, thành phố Thanh Hóa</span><br />
+<strong>Bản quyền: </strong> <span> Sở Giáo dục và Đào tạo Thanh Hóa</span><br />
+<strong>Người xây dựng: </strong> <span> ông Dương Đình Sĩ, chuyên viên phòng GDTrH</span>
+<strong>- Điện thoại: </strong><span>0912 980 656</span>
+<strong> - Email: </strong><a href="mailto:sidd.gdtrh@thanhhoa.edu.vn">sidd.gdtrh@thanhhoa.edu.vn</a><span>
+</div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    
+<script type='text/javascript'>new Sys.WebForms.Menu({ element: 'mnuMain', disappearAfter: 500, orientation: 'horizontal', tabIndex: 0, disabled: false });</script></form>
+</body>
+</html>
